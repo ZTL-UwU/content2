@@ -1,6 +1,6 @@
 {
   "name": "@ztl-uwu/nuxt-content",
-  "version": "2.13.5",
+  "version": "2.13.6",
   "description": "Write your content inside your Nuxt app",
   "homepage": "https://content.nuxt.com",
   "keywords": [
@@ -8,7 +8,7 @@
     "content",
     "module"
   ],
-  "repository": "nuxt/content",
+  "repository": "ztl-uwu/nuxt-content",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.16.2",
-    "@nuxtjs/mdc": "^0.16.1",
+    "@nuxtjs/mdc": "https://pkg.pr.new/@nuxtjs/mdc@947176d",
     "@vueuse/core": "^13.1.0",
     "@vueuse/head": "^2.0.0",
     "@vueuse/nuxt": "^13.1.0",

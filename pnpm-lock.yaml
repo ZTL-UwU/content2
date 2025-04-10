@@ -12,8 +12,8 @@ importers:
         specifier: ^3.16.2
         version: 3.16.2(magicast@0.3.5)
       '@nuxtjs/mdc':
-        specifier: ^0.16.1
-        version: 0.16.1(magicast@0.3.5)
+        specifier: https://pkg.pr.new/@nuxtjs/mdc@947176d
+        version: https://pkg.pr.new/@nuxtjs/mdc@947176d(magicast@0.3.5)
       '@vueuse/core':
         specifier: ^13.1.0
         version: 13.1.0(vue@3.5.13(typescript@5.8.3))
@@ -851,8 +851,9 @@ packages:
   '@nuxthq/studio@2.2.1':
     resolution: {integrity: sha512-FiKaC2NBnoKbV5opW8+bXt75R9b7XQ/xtr2bCSLRUca2H7lYypfUAdpYltJasKMgJsUWMNHME92iW5Fi9gb+IA==}
 
-  '@nuxtjs/mdc@0.16.1':
-    resolution: {integrity: sha512-di9Ox9QY5pO2eIkQPyKFe9O8L3RvIrGbmjI3rJQRj1xGYRFj2S9RvBPCFbvfaqQGOTjOfxHLg8KtQIGj1Iw/lg==}
+  '@nuxtjs/mdc@https://pkg.pr.new/@nuxtjs/mdc@947176d':
+    resolution: {tarball: https://pkg.pr.new/@nuxtjs/mdc@947176d}
+    version: 0.16.1
 
   '@nuxtjs/tailwindcss@6.13.2':
     resolution: {integrity: sha512-knCmVe1I0div4tWj6f9GRaHX97zqD257gOeG4JIcWsC0yRfoiT34GBAyqK8Sc15qiKKMB/lZK6Z3skQRYRk/1Q==}
@@ -6960,9 +6961,11 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@nuxtjs/mdc@0.16.1(magicast@0.3.5)':
+  '@nuxtjs/mdc@https://pkg.pr.new/@nuxtjs/mdc@947176d(magicast@0.3.5)':
     dependencies:
       '@nuxt/kit': 3.16.2(magicast@0.3.5)
+      '@shikijs/langs': 3.2.2
+      '@shikijs/themes': 3.2.2
       '@shikijs/transformers': 3.2.2
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4

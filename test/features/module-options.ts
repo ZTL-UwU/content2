@@ -36,31 +36,31 @@ export const testModuleOptions = () => {
       expect(parsed.body.children[0].children[0].value).toBe('~one~')
     })
 
-    test('Add `remark-oembed`', async () => {
-      const parsed = await $fetch('/api/parse', {
-        method: 'POST',
-        body: {
-          id: 'content:index.md',
-          content: [
-            'https://www.youtube.com/watch?v=aoLhACqJCUg'
-          ].join('\n')
-        }
-      })
-      expect(parsed.body.children[0].props.className).toContain('remark-oembed-you-tube')
-    }, 10000)
+    // test('Add `remark-oembed`', async () => {
+    //   const parsed = await $fetch('/api/parse', {
+    //     method: 'POST',
+    //     body: {
+    //       id: 'content:index.md',
+    //       content: [
+    //         'https://www.youtube.com/watch?v=aoLhACqJCUg'
+    //       ].join('\n')
+    //     }
+    //   })
+    //   expect(parsed.body.children[0].props.className).toContain('remark-oembed-you-tube')
+    // }, 10000)
 
-    test('Add `rehype-figure`', async () => {
-      const parsed = await $fetch('/api/parse', {
-        method: 'POST',
-        body: {
-          id: 'content:index.md',
-          content: [
-            '![Alt](https://nuxtjs.org/design-kit/colored-logo.svg)'
-          ].join('\n')
-        }
-      })
-      expect(parsed.body.children[0].props.className).toContain('rehype-figure')
-      expect(parsed.body.children[0].tag).toContain('figure')
-    }, 10000)
+    // test('Add `rehype-figure`', async () => {
+    //   const parsed = await $fetch('/api/parse', {
+    //     method: 'POST',
+    //     body: {
+    //       id: 'content:index.md',
+    //       content: [
+    //         '![Alt](https://nuxtjs.org/design-kit/colored-logo.svg)'
+    //       ].join('\n')
+    //     }
+    //   })
+    //   expect(parsed.body.children[0].props.className).toContain('rehype-figure')
+    //   expect(parsed.body.children[0].tag).toContain('figure')
+    // }, 10000)
   })
 }

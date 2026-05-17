@@ -1,5 +1,5 @@
 import type { RouteLocationNormalized, RouteLocationNormalizedLoaded } from 'vue-router'
-import type { HeadObjectPlain } from '@vueuse/head'
+import type { SerializableHead } from '@unhead/vue'
 import type { Ref } from 'vue'
 import { hasProtocol, joinURL, withTrailingSlash, withoutTrailingSlash } from 'ufo'
 import type { ParsedContent } from '@nuxt/content'
@@ -17,7 +17,7 @@ export const useContentHead = (
     if (!to.path || !data) { return }
 
     // Default head to `data?.head`
-    const head: HeadObjectPlain = Object.assign({}, data?.head || {})
+    const head: SerializableHead = Object.assign({}, data?.head || {})
 
     head.meta = [...(head.meta || [])]
     head.link = [...(head.link || [])]
